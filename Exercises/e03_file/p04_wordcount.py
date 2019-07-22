@@ -5,7 +5,8 @@ wordsDict = dict()
 
 with open(filename, 'r') as file:
     for line in file:
-        linewords = line.replace('(', ' ').replace(')', ' ').replace(',', ' ').replace('.', ' ').split()
+        linewords = line.replace('(', ' ').replace(')', ' ')\
+                        .replace(',', ' ').replace('.', ' ').split()
         #print(linewords)
         for word in linewords:
             count = wordsDict.get(word, 0)
@@ -17,5 +18,5 @@ with open(filename, 'r') as file:
 
 import operator
 wordsList = sorted(wordsDict.items(), key=operator.itemgetter(1), reverse=True)
-for i in range(15):
+for i in range(10):
     print(wordsList[i])

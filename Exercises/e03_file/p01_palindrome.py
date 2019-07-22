@@ -7,8 +7,10 @@ def isPalindrome(a):
 
 maxNum = 0
 for i in range(100, 1000):
-    for k in range(100, 1000):
+    for k in range(i, 1000):
         if isPalindrome(str(i*k)):
             if i*k > maxNum:
                 maxNum = i*k
-print(maxNum)
+                maxA = i
+                maxB = k
+print(maxNum, maxA, maxB)

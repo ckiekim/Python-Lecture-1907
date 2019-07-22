@@ -5,5 +5,5 @@ lineNo = 1
 with open(filename, 'r', encoding='UTF-8') as file:
     for line in file:
         if line.find(word) >= 0:
-            print('%2d:' % lineNo, line, end='')
+            print('%3d:' % lineNo, line, end='')
         lineNo += 1
