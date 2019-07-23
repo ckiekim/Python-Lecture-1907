@@ -16,7 +16,9 @@ with open(filename, 'r') as file:
             else:
                 wordsDict.update(dict([(word, count+1)]))
 
+print('총 단어수 =', len(wordsDict))
 import operator
 wordsList = sorted(wordsDict.items(), key=operator.itemgetter(1), reverse=True)
+print('많이 나온 단어')
 for i in range(10):
     print(wordsList[i])
