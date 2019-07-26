@@ -3,7 +3,7 @@
 # from_string은 문자열로 인스턴스를 만드는 메서드이며
 # is_time_valid는 문자열이 올바른 시간인지 검사하는 메서드입니다.
 # 시간은 24시까지, 분은 59분까지, 초는 60초까지 있어야 합니다.
-# 정답에 코드를 작성할 때는 class Time:에 맞춰서 들여쓰기를 해주세요.
+# 정답에 코드를 작성할 때는 Class Time:에 맞춰서 들여쓰기를 해주세요.
 class Time:
     def __init__(self, hour, minute, second):
         self.hour = hour
